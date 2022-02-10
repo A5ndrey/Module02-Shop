@@ -1,0 +1,12 @@
+$bg: #eee;
+body{
+	background-color: $bg;
+}
+.box{
+	&__image{
+		fill: #f00;
+		&:hover{
+			fill:blue;
+		}
+	}
+}
