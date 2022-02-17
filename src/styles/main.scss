@@ -1,12 +1,25 @@
-$text: #27300f;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap');
+
+$green: #27300f;
 $orange: #d26a22;
 $white: #fff;
+$font-jost: 'Jost', sans-serif;
+$font-cormorant: 'Cormorant', serif;
+
+html{
+	font-size: 10px;
+}
+
+body{
+	font-size: 1.6rem;
+	font-family: $font-jost;
+	color: $green;
+}
 
 .header{
 	max-width: 1440px;
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	margin: 0 auto 4.8rem;
+	padding: 4rem 15px 0 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -16,12 +29,11 @@ $white: #fff;
 		list-style-type: none;
 		margin: 0;
 		padding-left: 0;
-		gap: 49px;
+		gap: 4.8rem;
 	}
 
 	&__link{
-		font-size: 16px;
-		color: $text;
+		color: $green;
 		text-decoration: none;
 		&:hover{
 			color: $orange;
@@ -29,8 +41,8 @@ $white: #fff;
 	}
 
 	&__tel{
-		font-size: 16px;
-		color: $text;
+		font-weight: 500;
+		color: $green;
 		text-decoration: none;
 		&:hover{
 			color: $orange;
@@ -40,22 +52,28 @@ $white: #fff;
 	&__cart{
 		display: block;
 		background-image: url("../images/cart.svg");
-		width: 40px;
-		height: 40px;
+		width: 3.8rem;
+		height: 3.8rem;
+		border: 1px solid $orange;
 		background-color: $orange;
 		border-radius: 100%;
-		background-size: 17px 15px;
+		background-size: 1.7rem 1.5rem;
 		background-repeat: no-repeat;
 		background-position: center center;
 		position: relative;
+		cursor: pointer;
+		&:hover{
+			background-color: $green;
+			border: 1px solid $green;
+		}
 	}
 
 	&__counter{
 		color: $white;
-		font-size: 8px;
+		font-size: .8rem;
 		position: absolute;
-		right: 10px;
-		top: 6px;
+		right: 1rem;
+		top: .6rem;
 	}
 }
 .logo{
@@ -63,6 +81,216 @@ $white: #fff;
 	display: block;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 123px;
-	height: 32px;
+	width: 12.3rem;
+	height: 3.2rem;
+}
+
+.container{
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.main{
+	background-image: url("../images/main.png");
+	background-size: cover;
+	background-position-x: center;
+	position: relative;
+	padding-bottom: 191px;
+
+	&__item{
+		margin-left: 12rem;
+		max-width: 378px;
+		margin-top: 6rem;
+	}
+
+	&__link{
+		margin-top: 6rem;
+	}
+
+	&__flex{
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		align-items: center;
+	}
+
+	&__cover{
+		border: 1px solid rgba($green, 0.4);
+		border-radius: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 763px;
+		height: 763px;
+		position: relative;
+	}
+
+	&__line{
+		width: 658px;
+		height: 658px;
+		border: 1px solid rgba($green, 0.4);
+		border-radius: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__image{
+		width: 92%;
+		box-shadow: 26px 29px 30px -15px rgba($green, 0.5);
+		border-radius: 100%;
+	}
+
+	&__btn{
+		border-radius: 100%;
+		width: 21px;
+		height: 21px;
+		background-color: transparent;
+		border: 1px solid $green;
+		padding: 4px;
+		cursor: pointer;
+		position: absolute;
+
+		&_1{
+			top: 66px;
+			left: 142px;
+		}
+		&_2{
+			border: 1px solid $orange;
+			top: 210px;
+			right: 85px;
+		}
+		&_3{
+			bottom: 3px;
+			right: 270px;
+		}
+	}
+
+	&__border{
+		background-color: $green;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+
+		&_2{
+			background-color: $orange;
+		}
+	}
+
+	&__btn-text{
+		position: absolute;
+		color: $green;
+
+		&_1{
+			top: 49px;
+			left: 66px;
+		}
+
+		&_2{
+			top: 197px;
+			right: 8px;
+		}
+
+		&_3{
+			bottom: -46px;
+			right: 246px;
+		}
+
+		&_food{
+			display: block;
+			margin-bottom: 0.5rem;
+			opacity: 0.8;
+		}
+	}
+
+	&__tomato{
+		position: absolute;
+		bottom: 119px;
+		right: 122px;
+		width: 11rem;
+	}
+
+	&__avocado{
+		position: absolute;
+		width: 175px;
+		top: 50px;
+		right: 3px;
+	}
+
+	&__cucumber{
+		position: absolute;
+		width: 85px;
+		top: 0;
+		left: 690px;
+	}
+
+	&__pepper{
+		position: absolute;
+		width: 82px;
+		top: 400px;
+		left: 40px;
+	}
+
+	&__peas1{
+		position: absolute;
+		width: 46px;
+		bottom: 245px;
+		left: 18px;
+	}
+
+	&__peas2{
+		position: absolute;
+		width: 37px;
+		bottom: 213px;
+		left: 0;
+	}
+
+	&__peas3{
+		position: absolute;
+		width: 63px;
+		bottom: 172px;
+		left: 40px;
+
+	}
+}
+
+.title{
+	font-family: $font-cormorant;
+	font-weight: 700;
+	font-size: 8rem;
+	margin: 0;
+	
+	&__span{
+		font-style: italic;
+	}
+
+	&_block{
+		.title__span{
+			display: block;
+		}
+	}
+}
+
+.description{
+	margin: 0;
+
+	&_size-s{
+		font-size: 1.8rem;
+	}
+}
+
+.link{
+	color: $white;
+	text-transform: uppercase;
+	padding: 2.5rem 4.2rem;
+	background-color: $orange;
+	text-decoration: none;
+	border-radius: 3.8rem;
+	box-shadow: 0px 1rem 1.1rem .2rem rgba(207, 92, 13, 0.2);
+	display: inline-block;
+	letter-spacing: 2px;
 }
