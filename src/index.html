@@ -7,102 +7,674 @@
 	<title>Здоровое Питание</title>
 </head>
 <body>
-	<div class="main">
-		<header class="header">
-			<a href="#" class="logo"></a>
-			<nav>
-				<ul class="header__nav">
-					<li class="header__item">
-						<a href="#" class="header__link">
-							Наша продукция
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#" class="header__link">
-							О компании
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#" class="header__link">
-							Новинки
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#" class="header__link">
-							Каталог
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#" class="header__link">
-							Доставка
-						</a>
-					</li>
-					<li class="header__item">
-						<a href="#" class="header__link">
-							Контакты
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
-			<button href="#" class="header__cart">
-				<span class="header__counter">
-					0
-				</span>
-			</button>
-		</header>
-		<div class="container">
-			<div class="main__flex">
-				<div class="main__text">
-					<h1 class="title title_block">
-						Здоровая еда -
-						<span class="title__span">
-							это просто!
-						</span>
-					</h1>
-					<div class="main__item">
-						<div class="description description_size-s">
-							Сеть магазинов полезных продуктов питания, производство которых основано на&nbsp;принципах и стандартах органического чистых продуктов
-						</div>
-						<div class="main__link">
-							<a href="#" class="link">
-								Перейти в каталог
+	<div class="wrap">
+		<div class="main">
+			<header class="header">
+				<a href="#" class="logo"></a>
+				<nav class="header__navigation">
+					<ul class="header__nav">
+						<li class="header__item">
+							<a href="#offer" class="header__link">
+								Наша продукция
 							</a>
+						</li>
+						<li class="header__item">
+							<a href="#about" class="header__link">
+								О компании
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#trends" class="header__link">
+								Новинки
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#catalog" class="header__link">
+								Каталог
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#delivery" class="header__link">
+								Доставка
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="#contact" class="header__link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
+				<div class="header__buttons">
+					<a href="tel:+79453425555" class="header__phone"></a>
+					<button class="header__menu" onclick="openModalBurger()"></button>
+					<button href="#" class="header__cart">
+						<span class="header__counter">
+							0
+						</span>
+					</button>
+				</div>
+			</header>
+			<div class="container">
+				<div class="main__flex">
+					<div class="main__text">
+						<h1 class="title title_block">
+							Здоровая еда -
+							<span class="title__span">
+								это просто!
+							</span>
+						</h1>
+						<div class="main__item">
+							<p class=" main__description description description_size-s ">
+								Сеть магазинов полезных продуктов питания, производство которых основано напринципах и стандартах органического чистых продуктов
+							</p>
+							<img class="main__imagemobi" src="images/plate.png" alt="Тарелка с салатом">
+							<div class="main__link">
+								<a href="#catalog" class="link">
+									Перейти в каталог
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="main__cover">
-					<div class="main__line">
-						<img class="main__image" src="images/plate.png" alt="Тарелка с салатом">
-					</div>
-					<button class="main__btn main__btn_1">
-						<div class="main__border main__border_1" type="button"></div>
-					</button>
-					<button class="main__btn main__btn_2">
-						<div class="main__border main__border_2" type="button"></div>
-					</dibutton>
-					<button class="main__btn main__btn_3">
-						<div class="main__border main__border_3" type="button"></div>
-					</button>
-					<div class="main__btn-text main__btn-text_1">
-						<span class="main__btn-text_food">Авокадо</span> 134 руб
-					</div>
-					<div class="main__btn-text main__btn-text_2">
-						<span class="main__btn-text_food">Картофель</span> 169 руб
-					</div>
-					<div class="main__btn-text main__btn-text_3">
-						<span class="main__btn-text_food">Томаты</span> 215 руб
+					<div class="main__cover">
+						<div class="main__line">
+							<img class="main__image" src="images/plate.png" alt="Тарелка с салатом">
+						</div>
+						<button class="main__btn main__btn_1">
+							<div class="main__btn-border" type="button"></div>
+						</button>
+						<button class="main__btn main__btn_2">
+							<div class="main__btn-border" type="button"></div>
+						</dibutton>
+						<button class="main__btn main__btn_3">
+							<div class="main__btn-border" type="button"></div>
+						</button>
+						<div class="main__btn-text main__btn-text_1">
+							<span class="main__btn-text_food">Авокадо</span> 134 руб
+						</div>
+						<div class="main__btn-text main__btn-text_2">
+							<span class="main__btn-text_food">Картофель</span> 169 руб
+						</div>
+						<div class="main__btn-text main__btn-text_3">
+							<span class="main__btn-text_food">Томаты</span> 215 руб
+						</div>
 					</div>
 				</div>
 			</div>
+			<img class="main__tomato" src="images/tomato.png" alt="Томат">
+			<img class="main__avocado" src="images/avocado.png" alt="Авокадо">
+			<img class="main__cucumber" src="images/cucumber.png" alt="Огурец">
+			<img class="main__pepper" src="images/pepper.png" alt="Перец">
+			<img class="main__bean1" src="images/bean1.png" alt="бобовые">
+			<img class="main__bean2" src="images/bean2.png" alt="бобовые">
+			<img class="main__bean3" src="images/bean3.png" alt="бобовые">
 		</div>
-		<img class="main__tomato" src="images/tomato.png" alt="Томат">
-		<img class="main__avocado" src="images/avocado.png" alt="Авокадо">
-		<img class="main__cucumber" src="images/cucumber.png" alt="Огурец">
-		<img class="main__pepper" src="images/pepper.png" alt="Перец">
-		<img class="main__peas1" src="images/peas1.png" alt="Горох">
-		<img class="main__peas2" src="images/peas2.png" alt="Горох">
-		<img class="main__peas3" src="images/peas3.png" alt="Горох">
+		<section class="offer" id="offer">
+			<div class="container">
+				<h1 class="title title_block">
+					Что мы
+					<span class="title__span">
+						предлагаем
+					</span>
+				</h1>
+				<div class="offer__text">
+					<p class="description description_size-m">
+						Органика — это целостная система производства по-настоящему чистой, натуральной и полезной продукции
+					</p>
+				</div>
+				<div class="slider">
+					<div class="swiper offerSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide_white swiper-slide_milk">
+								<h3 class="swiper-slide__title">
+									Молочные продукты
+								</h3>
+								<div class="swiper-slide__hover">
+									<p class="swiper-slide__text">
+										В наши дни появилась мода на&nbsp;здоровое питание, поэтому на&nbsp;рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства
+									</p>
+									<a class="swiper-slide__link" href="#">Подробнее</a>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide_white swiper-slide_pasta">
+								<h3 class="swiper-slide__title">
+									Бакалея
+								</h3>
+								<div class="swiper-slide__hover">
+									<p class="swiper-slide__text">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum tempora sequi iste veritatis impedit a, hic ipsa quos optio, libero ea numquam autem velit suscipit facere omnis, consequatur obcaecati ullam.
+									</p>
+									<a class="swiper-slide__link" href="#">Подробнее</a>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide_white swiper-slide_steaks">
+								<h3 class="swiper-slide__title">
+									Мясо, птица
+								</h3>
+								<div class="swiper-slide__hover">
+									<p class="swiper-slide__text">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum tempora sequi iste veritatis impedit a, hic ipsa quos optio, libero ea numquam autem velit suscipit facere omnis, consequatur obcaecati ullam.
+									</p>
+									<a class="swiper-slide__link" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container">
+				<h1 class="title title_block">
+					В чем наша
+					<span class="title__span">
+						уникальность
+					</span>
+				</h1>
+				<div class="about__box">
+					<div class="about__text">
+						<p class="description description_size-s">
+							Мы полностью контролируем весь цикл производства – от поля до прилавка за счет собственной серьезной материальной и научной базы.<br> Наш подход направлен на высокие технологии и&nbsp;достижения научного прогресса
+						</p>
+					</div>
+					<ul class="about__list">
+						<li class="about__item">
+							Здоровье
+						</li>
+						<li class="about__item">
+							Традиции
+						</li>
+						<li class="about__item">
+							Вкус
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="trends" id="trends">
+			<div class="container">
+				<h1 class="title">
+					Наши
+					<span class="title__span">
+						новинки
+					</span>
+				</h1>
+				<div class="trends__text">
+					<p class="description description_size-m">
+						Будь в тренде с современым миром, и будь здоров вместе с нами
+					</p>
+				</div>
+				<div class="slider">
+					<div class="swiper trendsSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper-slide__cover">
+									<img class="swiper-slide__image" src="images/catalog/milk.png" alt="Бутылка с молоком">
+								</div>
+								<h3 class="swiper-slide__title">
+									Молоко топлёное
+								</h3>
+								<p class="swiper-slide__description">
+									Молоко Healthy food топленеое мдж 4% 500гр
+								</p>
+								<p class="swiper-slide__price">
+									159 руб/шт
+								</p>
+								<div class="swiper-slide__footer">
+									<div class="counter">
+										<button class="counter__btn counter__minus"></button>
+										<input class="counter__input" type="text" value="0">
+										<button class="counter__btn counter__plus"></button>
+									</div>
+									<a href="#" class="link link_max">В корзину</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__cover">
+									<img class="swiper-slide__image" src="images/catalog/egg.png" alt="Яйца">
+								</div>
+								<h3 class="swiper-slide__title">
+									Яйцо перепелиное
+								</h3>
+								<p class="swiper-slide__description">
+									QEGG Яйцо перепелиное 20шт
+								</p>
+								<p class="swiper-slide__price">
+									94 руб/упак
+								</p>
+								<div class="swiper-slide__footer">
+									<div class="counter">
+										<button class="counter__btn counter__minus"></button>
+										<input class="counter__input" type="text" value="0">
+										<button class="counter__btn counter__plus"></button>
+									</div>
+									<a href="#" class="link link_max">В корзину</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__cover">
+									<img class="swiper-slide__image" src="images/catalog/chicken.jpg" alt="Яйца">
+								</div>
+								<h3 class="swiper-slide__title">
+									Куриное филе Оссобуко
+								</h3>
+								<p class="swiper-slide__description swiper-slide__description_desktop">
+									Куриное филе Оссобуко (Ангус) охл.скин. В вакумной упаковке
+								</p>
+								<p class="swiper-slide__description swiper-slide__description_mobile">
+									(Ангус) охл.скин. В вакумной упаковке
+								</p>
+								<p class="swiper-slide__price">
+									1009 руб/кг
+								</p>
+								<div class="swiper-slide__footer">
+									<div class="counter">
+										<button class="counter__btn counter__minus"></button>
+										<input class="counter__input" type="text" value="0">
+										<button class="counter__btn counter__plus"></button>
+									</div>
+									<a href="#" class="link link_max">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<main class="catalog" id="catalog">
+			<div class="container">
+				<h1 class="title">Каталог</h1>
+				<div class="catalog__text">
+					<p class="description description_size-m">
+						Еда которая заботится о вашей фигуре
+					</p>
+				</div>
+				<ul class="category catalog__list">
+					<li class="category__item">
+						<a href="#" class="category__link">Молочные продукты</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Бакалея</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Мясо, птица</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Детям</a>
+					</li>
+					<li class="category__item">
+						<a href="#" class="category__link">Овощи и фрукты</a>
+					</li>
+				</ul>
+				<div class="catalog__list category-swiper categorySwiper">
+					<div class="swiper-wrapper">
+						<a class="swiper-slide category-swiper__link" href="#">Молочные продукты</a>
+						<a class="swiper-slide category-swiper__link" href="#">Бакалея</a>
+						<a class="swiper-slide category-swiper__link" href="#">Мясо, птица</a>
+						<a class="swiper-slide category-swiper__link" href="#">Детям</a>
+						<a class="swiper-slide category-swiper__link" href="#">Овощи и фрукты</a>
+					</div>
+				</div>
+				<div class="catalog-grid">
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/milk.png" alt="Бутылка молока" class="catalog-grid__image catalog-grid__image_milk">
+						</div>
+						<h3 class="catalog-grid__title">
+							Молоко топлёное
+						</h3>
+						<p class="catalog-grid__description">
+							Молоко Healthy food топленеое<br>мдж&nbsp;4%, &nbsp;500г
+						</p>
+						<p class="catalog-grid__price">
+							159 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/yogurt.png" alt="Йогурт" class="catalog-grid__image catalog-grid__image_yogurt">
+						</div>
+						<h3 class="catalog-grid__title">
+							Йогурт с черникой
+						</h3>
+						<p class="catalog-grid__description">
+							Йогурт Healthy food с&nbsp;черникой, питьевой 1,5%,&nbsp;750г
+						</p>
+						<p class="catalog-grid__price">
+							89 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/curd.png" alt="Творог" class="catalog-grid__image catalog-grid__image_curd">
+						</div>
+						<h3 class="catalog-grid__title">
+							Творог
+						</h3>
+						<p class="catalog-grid__description">
+							Творог Healthy food Рассыпчатый 9%&nbsp;350г
+						</p>
+						<p class="catalog-grid__price">
+							216руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/mozzarella.png" alt="Моцарелла" class="catalog-grid__image catalog-grid__image_mozzarella">
+						</div>
+						<h3 class="catalog-grid__title">
+							Моцарелла
+						</h3>
+						<p class="catalog-grid__description">
+							Моцарелла Healthy food<br>45%,&nbsp;0.125кг
+						</p>
+						<p class="catalog-grid__price">
+							359 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/butter.png" alt="Масло сливочное" class="catalog-grid__image catalog-grid__image_butter">
+						</div>
+						<h3 class="catalog-grid__title">
+							Масло сливочное
+						</h3>
+						<p class="catalog-grid__description">
+							Масло Healthy food сливочное 82,5%,&nbsp;200г
+						</p>
+						<p class="catalog-grid__price">
+							139 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/coctail.jpg" alt="Йогурт термостатный" class="catalog-grid__image catalog-grid__image_coctail">
+						</div>
+						<h3 class="catalog-grid__title catalog-grid__title_desktop">
+							Йогурт термостатный
+						</h3>
+						<h3 class="catalog-grid__title catalog-grid__title_mobile">
+							Йогурт
+						</h3>
+						<p class="catalog-grid__description catalog-grid__description_desktop">
+							Йогурт Healthy food термостатный с&nbsp;фруктово-ягодным 2,5 %, 165г
+						</p>
+						<p class="catalog-grid__description catalog-grid__description_mobile">
+							Термостатный с&nbsp;фруктово-ягодным 2,5 %, 165г
+						</p>
+						<p class="catalog-grid__price">
+							159 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/cheese.png" alt="Сыр" class="catalog-grid__image catalog-grid__image_cheese">
+						</div>
+						<h3 class="catalog-grid__title">
+							Сыр
+						</h3>
+						<p class="catalog-grid__description">
+							Сыр Healthy food Сливочный 45% 200г
+						</p>
+						<p class="catalog-grid__price">
+							559 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+					<div class="catalog-grid__item">
+						<div class="catalog-grid__cover">
+							<img src="images/catalog/sauce.png" alt="Соус" class="catalog-grid__image catalog-grid__image_sauce">
+						</div>
+						<h3 class="catalog-grid__title">
+							Соус для салата
+						</h3>
+						<p class="catalog-grid__description">
+							Соус для салата Healthy food пикантыный 4% 70гр
+						</p>
+						<p class="catalog-grid__price">
+							59 руб/шт
+						</p>
+						<div class="catalog-grid__footer">
+							<div class="counter">
+								<button class="counter__btn counter__btn_min counter__minus"></button>
+								<input class="counter__input counter__input_min" type="text" value="0">
+								<button class="counter__btn counter__btn_min counter__plus"></button>
+							</div>
+							<a href="#" class="link link_min">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<label class="catalog__btn">
+					<span>Загрузить ещё</span>
+				</label>
+			</div>
+		</main>
+		<section class="delivery" id="delivery">
+			<div class="container">
+				<h1 class="title">
+					Доставка и
+					<span class="title__span">
+						оплата
+					</span>
+				</h1>
+				<div class="delivery__box">
+					<div class="delivery__text">
+						<p class="delivery__description description_size-s">
+							Мы доставляем ваши заказы курьером  в&nbsp;специально&nbsp;оборудованном транспорте.
+						</p>
+						<p class="delivery__description description_size-s">
+							Компания Healthly food предлагает самые удобные и быстрые способы доставки по всей стране. Посмотреть подробные условия и&nbsp;географию&nbsp;вы&nbsp;можете по этой <a class="delivery__link" href="#">ссылке</a>
+						</p>
+					</div>
+					<div class="delivery__pay">
+						<p class="delivery__description description_size-s">
+							Вы можете оплатить заказ наличными или картой курьеру, либо воспользоваться функцией онлайн&nbsp;-&nbsp;оплаты и получить <span class="delivery__discount" >скидку&nbsp;5%.</span>
+						</p>
+						<ul class="delivery__list">
+							<li class="delivery__item delivery__mastercard"></li>
+							<li class="delivery__item delivery__visa"></li>
+							<li class="delivery__item delivery__paypal"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="contact-box">
+					<div class="contact-box__item">
+						<h1 class="title title_block">
+							Не смогли
+							<span class="title__span">определиться?</span>
+						</h1>
+						<div class="contact-box__text">
+							<p class="contact-box__description description_size-s">
+								Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры свяжутся с вами в течении рабочего дня.
+							</p>
+							<ul class="contact-box__list">
+								<li class="contact-box__point contact-box__point_phone"><a class="contact-box__link" href="tel:+79453425555">+7 945 342 55 55</a></li>
+								<li class="contact-box__point contact-box__point_mail"><a class="contact-box__link" href="mailto:healthlyfood@mail.ru">healthlyfood@mail.ru</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="contact-box__form">
+						<div class="card">
+							<h3 class="card__title">
+								Свяжитесь с нами
+							</h3>
+							<form>
+								<label class="card__label">Ваше имя</label>
+								<input class="card__input" type="text" placeholder="Ваше имя">
+								<label class="card__label">Ваш телефон</label>
+								<input class="card__input" type="tel" placeholder="Ваш телефон">
+								<button class="link card__link" type="submit">Заказать звонок</button>
+								<p class="card__check">Нажимая на кнопку вы подтверждаете свое согласие на обработ <a class="card__docs" href="#">персональных данных</a>.</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__box">
+					<a href="#" class="logo logo_footer"></a>
+					<div class="footer__info">
+						<ul class="footer__list footer__list_menu">
+							<li class="footer__item footer__item_menu" >
+								<a class="footer__link" href="#offer">Наша продукция</a>
+							</li>
+							<li class="footer__item footer__item_menu" >
+								<a class="footer__link" href="#trends">Новинки</a>
+							</li>
+							<li class="footer__item footer__item_menu" >
+								<a class="footer__link" href="#delivery">Доставка</a>
+							</li>
+						</ul>
+						<ul class="footer__list footer__list_address">
+							<li class="footer__item footer__item_address" >
+								Москва, ул.&nbsp;Ленинградская&nbsp;64
+							</li>
+							<li class="footer__item footer__item_address" >
+								пн-пт с&nbsp;09:00 до&nbsp;21:00
+							</li>
+							<li class="footer__item footer__item_address" >
+								сб-вс с&nbsp;09:00 до&nbsp;19:00
+							</li>
+						</ul>
+						<div class="footer__contact">
+							<a href="tel:+79453425555" class="footer__link footer__tel">+7 945 342 55 55</a>
+							<a href="mailto:healthlyfood@mail.ru" class="footer__link">e-mail: healthlyfood@mail.ru</a>
+							<ul class="footer-social">
+								<li class="footer-social__item">
+									<a href="#" target="_blank" class="footer-social__link footer-social__vk"></a>
+								</li>
+								<li class="footer-social__item">
+									<a href="#" target="_blank" class="footer-social__link footer-social__inst"></a>
+								</li>
+								<li class="footer-social__item">
+									<a href="#" target="_blank" class="footer-social__link footer-social__fb"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-text">
+					<p class="footer-text__item">
+						&copy; 2020, Все права защищены
+					</p>
+					<p class="footer-text__item">
+						Сделано в рамках курса учебной платформы <a class="footer__author" href="#">Annblok</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<div id="modal" class="modal">
+			<div class="modal__body">
+				<div class="modal__img">
+					<img src="images/pepper.png" alt="Перчик" class="modal__pepper">
+				</div>
+				<div class="modal__close close">
+					<img src="images/close.svg" alt="Крестик" class="modal__cross" onclick="closeModal()">
+				</div>
+				<div class="modal__content">
+					<ul class="modal__nav">
+						<li class="modal__item">
+							<a href="#offer" class="modal__link">
+								Наша продукция
+							</a>
+						</li>
+						<li class="modal__item">
+							<a href="#about" class="modal__link">
+								О компании
+							</a>
+						</li>
+						<li class="modal__item">
+							<a href="#trends" class="modal__link">
+								Новинки
+							</a>
+						</li>
+						<li class="modal__item">
+							<a href="#catalog" class="modal__link">
+								Каталог
+							</a>
+						</li>
+						<li class="modal__item">
+							<a href="#delivery" class="modal__link">
+								Доставка
+							</a>
+						</li>
+						<li class="modal__item">
+							<a href="#contact" class="modal__link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
